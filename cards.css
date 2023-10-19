@@ -1,3 +1,5 @@
+/* Event cards */
+
 :root {
   --card-height: 600px;
   --card-width: calc(var(--card-height) / 1.5);
@@ -7,15 +9,18 @@
   position: relative;
   background-color: black;
 }
+
 /* to centering events heading */
 .event-heading-container h3 {
-  font-size: 3rem;
   z-index: 10;
   position: absolute;
   top: 2rem;
   /* relative to entire horizontal sliders width */
   left: 8.33%;
   transform: translate(-50%, -50%);
+
+  font-size: 2rem;
+  padding-top: 3rem;
 }
 .event-cards {
   display: flex;
@@ -140,8 +145,8 @@
 /* background-color: yellow; */
 /* } */
 .next-block {
-  height: 100vh;
-  background: black;
+  height: auto;
+  /* background: black; */
 }
 
 @media screen and (max-width: 700px) {
@@ -155,5 +160,10 @@
   :root {
     --card-height: 400px;
     /* --card-width: calc(var(--card-height) / 1.5); */
+  }
+
+  /* to be center in mobile */
+  div.event-card {
+    margin: -100px auto 0;
   }
 }
