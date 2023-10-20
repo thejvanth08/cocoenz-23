@@ -429,13 +429,16 @@ a {
   a {
     font-weight: 500;
   }
+
   .hero-content {
     margin-top: 9rem;
   }
+
   .title-container h1 {
     font-size: 4rem;
     letter-spacing: 3px;
   }
+
   .title-container h1.title-year {
     font-size: 2.5rem;
   }
@@ -444,6 +447,7 @@ a {
     font-weight: 600;
     font-size: 1.2rem;
   }
+
   .menu > .menu__item {
     font-family: var(--font-family-secondary);
     font-size: 2.5rem;
