@@ -4,14 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COCOENZ 23</title>
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Cards CSS -->
-    <link rel="stylesheet" href="cards.css" />
-    <!-- Hero CSS -->
-    <link rel="stylesheet" href="hero.css" />
-    <!-- Schedule CSS -->
-    <link rel="stylesheet" href="schedule.css" />
     <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -44,6 +36,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Cards CSS -->
+    <link rel="stylesheet" href="cards.css" />
+    <!-- Hero CSS -->
+    <link rel="stylesheet" href="hero.css" />
+    <!-- Schedule CSS -->
+    <link rel="stylesheet" href="schedule.css" />
     <style>
       .team {
         padding-inline: 3rem;
@@ -51,27 +51,27 @@
 
       .member-name {
         padding-block: 1rem;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         font-weight: 600;
+        color: #00f0ff;
       }
 
       .member-role {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: 400;
       }
 
       .swiper {
         width: 100%;
         max-width: 1000px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        /* padding-top: 50px; */
       }
 
       .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 300px;
-        height: 350px;
+        height: auto;
       }
 
       .swiper-slide img {
@@ -235,10 +235,10 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/binary-cover.png" class="cover-image" />
+              <img src="images/events/binary-cover.png" class="cover-image" />
             </div>
             <img src="images/narroto-title.jpg" class="title" />
-            <img src="images/binary-char.png" class="character" />
+            <img src="images/events/binary-char.png" class="character" />
           </div>
           <p class="event-info">Coding Event</p>
         </div>
@@ -247,10 +247,10 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/circuit-cover.png" class="cover-image" />
+              <img src="images/events/circuit-cover.png" class="cover-image" />
             </div>
             <img src="images/narroto-title.jpg" class="title" />
-            <img src="images/binary-char.png" class="character" />
+            <img src="images/events/circuit-char.png" class="character" />
           </div>
           <p class="event-info">Circuit Design</p>
         </div>
@@ -259,10 +259,10 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/narroto-cover.png" class="cover-image" />
+              <img src="images/events/narrato-cover.png" class="cover-image" />
             </div>
             <img src="images/narroto-title.jpg" class="title" />
-            <img src="images/narroto-char.png" class="character" />
+            <img src="images/events/narrato-char.png" class="character" />
           </div>
           <p class="event-info">Paper Presentation</p>
         </div>
@@ -271,10 +271,10 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/ceo-cover.png" class="cover-image" />
+              <img src="images/events/ceo-cover.png" class="cover-image" />
             </div>
             <img src="images/narroto-title.jpg" class="title" />
-            <img src="images/ceo-char.png" class="character" />
+            <img src="images/events/ceo-char.png" class="character" />
           </div>
           <p class="event-info">Product Pitch</p>
         </div>
@@ -283,10 +283,10 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/music-cover.png" class="cover-image" />
+              <img src="images/events/music-cover.png" class="cover-image" />
             </div>
             <img src="images/narroto-title.jpg" class="title" />
-            <img src="images/music-char.png" class="character" />
+            <img src="images/events/music-char.png" class="character" />
           </div>
           <p class="event-info">Mystery Games</p>
         </div>
@@ -314,7 +314,7 @@
           <!-- 1 -->
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-laptop-code"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -327,7 +327,7 @@
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
               <!-- icon here -->
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-bolt"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -339,7 +339,7 @@
           <!--  3-->
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-user-tie"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -351,7 +351,7 @@
           <!--    4    -->
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-person-chalkboard"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -363,7 +363,7 @@
           <!--       5 -->
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-gamepad"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -375,7 +375,7 @@
           <!--       6 -->
           <div class="timeline-container">
             <div data-aos="zoom-in" class="timeline-icon">
-              <i class="far fa-grin-wink"></i>
+              <i class="fa-solid fa-trophy"></i>
             </div>
             <div data-aos="fade-left" class="timeline-body">
               <h4 class="timeline-title">
@@ -394,10 +394,12 @@
       <div class="sponsors">
         <h3>Sponsors</h3>
         <div class="grid">
+          <div data-aos="zoom-in-up" class="sponsor">
+            <img src="images/sponsor/edge-sponsor.png" alt="" />
+          </div>
+          <!-- <div data-aos="zoom-in-up" class="sponsor">😀</div>
           <div data-aos="zoom-in-up" class="sponsor">😀</div>
-          <div data-aos="zoom-in-up" class="sponsor">😀</div>
-          <div data-aos="zoom-in-up" class="sponsor">😀</div>
-          <div data-aos="zoom-in-up" class="sponsor">😀</div>
+          <div data-aos="zoom-in-up" class="sponsor">😀</div> -->
         </div>
       </div>
 
@@ -406,30 +408,53 @@
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-              <p class="member-name">Tom</p>
-              <p class="member-role">Cat</p>
+              <img src="images/team/HOD.jpg" />
+              <p class="member-name">Dr.Pachhaiammal Priya</p>
+              <p class="member-role">HOD</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-              <p class="member-name">Tom</p>
-              <p class="member-role">Cat</p>
+              <img src="images/team/jac.jpeg" />
+              <p class="member-name">Ms.S.Jacqulin Veda Jancy</p>
+              <p class="member-role">Co-Ordinator</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-              <p class="member-name">Tom</p>
-              <p class="member-role">Cat</p>
+              <img src="images/team/pavendan.jpeg" />
+              <p class="member-name">Dr.K.Pavendan</p>
+              <p class="member-role">Co-Ordinator</p>
             </div>
 
             <div class="swiper-slide">
-              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-              <p class="member-name">Tom</p>
-              <p class="member-role">Cat</p>
+              <img src="images/team/sakthi.jpeg" />
+              <p class="member-name">G.Sakthi</p>
+              <p class="member-role">Chair</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/team/mukunthen.jpeg" />
+              <p class="member-name">A.R.Mukunthan</p>
+              <p class="member-role">Vice Chair</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/team/akshaya.jpeg" />
+              <p class="member-name">Akshaya Kamalavasan</p>
+              <p class="member-role">Secretary</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/team/kerthana.jpeg" />
+              <p class="member-name">J.Keerthana</p>
+              <p class="member-role">Vice Secretary</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="images/team/rajalakshmi.jpeg" />
+              <p class="member-name">G.Rajalakshmi</p>
+              <p class="member-role">Treasurer</p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
@@ -437,13 +462,18 @@
     <!-- Footer Section -->
     <footer class="footer grid">
       <div class="contacts">
-        <h4>Contacts</h4>
-        <ul></ul>
+        <h4>CONTACT</h4>
+
+        <div class="heading"></div>
       </div>
+
       <div class="address">
-        <h4>Address</h4>
+        <h4>ADDRESS</h4>
       </div>
-      <div class="socials"></div>
+
+      <div class="socials">
+        <h4>SOCIAL</h4>
+      </div>
     </footer>
 
     <!-- Swiper CDN -->

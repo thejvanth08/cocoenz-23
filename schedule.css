@@ -33,7 +33,7 @@ body {
   top: 0;
   width: 4px;
   height: 100%;
-  background: black;
+  background: #070a0d;
 }
 .timeline .timeline-container {
   position: relative;
@@ -48,8 +48,9 @@ body {
   height: 50px;
   border-radius: 50%;
   text-align: center;
-  font-size: 2rem;
-  background: #4f537b;
+  font-size: 1.7rem;
+  background: #070a0d;
+  padding: 10px;
 }
 .timeline .timeline-container .timeline-icon i {
   position: absolute;

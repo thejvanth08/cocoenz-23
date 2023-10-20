@@ -198,18 +198,20 @@ h3 {
 /* Schedule Styles */
 .schedule {
   background-color: var(--primary-color);
-  min-height: 100vh;
+  height: auto;
+  padding-block: 3rem;
 }
 
 .schedule-heading {
   color: var(--black-color);
   font-size: 2rem;
-  padding-block: 2rem;
+  padding-bottom: 2rem;
 }
 
 /* Team & Sponsor styles */
 .team-sponsors {
-  min-height: 100vh;
+  height: auto;
+  padding-block: 3rem;
 }
 
 .team-sponsors .grid {
@@ -217,62 +219,34 @@ h3 {
 }
 
 .team-sponsors h3 {
-  padding-top: 3rem;
   font-size: 2rem;
+  padding-bottom: 2rem;
 }
 
 .sponsor {
   grid-column: 3/7;
-  height: 230px;
-  width: 230px;
-  background-color: rgba(70, 65, 65, 0.182);
+  background-color: rgba(255, 255, 255, 0.108);
   /* margin-block: 1rem; */
   text-align: center;
   font-size: 5rem;
-  margin-inline: auto;
+  margin: 0 auto 3rem;
+  padding: 20px;
 }
 
-/* .team {
-  padding-inline: 3rem;
+.sponsor img {
+  width: 90%;
+  max-width: 400px;
 }
-
-.member-name {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-
-.member-role {
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-
-.swiper {
-  width: 100%;
-  max-width: 1000px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 350px;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-}
-
-.swiper-slide p {
-  text-align: center;
-} */
 
 /* Footer styles */
 .footer {
   min-height: 500px;
   background-color: var(--primary-color);
+  padding: 2rem 3rem;
+}
+
+.footer * {
+  color: var(--black-color);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -288,12 +262,12 @@ h3 {
     padding: 0 2rem;
   }
 
-  .sponsor:nth-child(odd) {
+  /* .sponsor:nth-child(odd) {
     grid-column: 2/5;
   }
   .sponsor:nth-child(even) {
     grid-column: 5/8;
-  }
+  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
