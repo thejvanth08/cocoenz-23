@@ -1,8 +1,10 @@
 /* Event cards */
 
 :root {
-  --card-height: 600px;
+  --card-height: 550px;
   --card-width: calc(var(--card-height) / 1.5);
+  --primary-color: #fcee0a;
+  --secondary-color: #00f0ff;
 }
 
 .horizontal-sliders {
@@ -139,11 +141,18 @@
   width: 100%;
   /* for centering card within it's container */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
-/* .slide:nth-child(2n) { */
-/* background-color: yellow; */
-/* } */
+
+p.event-info {
+  text-align: center;
+  color: var(--secondary-color);
+  padding-top: 1rem;
+  font-size: 1.3rem;
+  font-family: "Audiowide", sans-serif;
+}
+
 .next-block {
   height: auto;
   /* background: black; */
@@ -151,7 +160,7 @@
 
 @media screen and (max-width: 700px) {
   :root {
-    --card-height: 500px;
+    --card-height: 480px;
     /* --card-width: calc(var(--card-height) / 1.5); */
   }
 }
@@ -164,6 +173,6 @@
 
   /* to be center in mobile */
   div.event-card {
-    margin: -100px auto 0;
+    margin: -150px auto 0;
   }
 }

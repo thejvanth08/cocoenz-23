@@ -11,10 +11,19 @@
     <!-- Hero CSS -->
     <link rel="stylesheet" href="hero.css" />
     <!-- Schedule CSS -->
-    <link rel="stylesheet" href="schedule.css">
+    <link rel="stylesheet" href="schedule.css" />
     <!-- AOS CDN -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Particles library script -->
     <script src="particles.js"></script>
@@ -22,13 +31,13 @@
     <!-- Gsap CDN Links -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  
+
     <!-- Scroll reveal CDN -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- Rellax.js CDN -->
     <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
-  
+
     <!-- Swiper CDN -->
     <link
       rel="stylesheet"
@@ -77,46 +86,45 @@
   </head>
 
   <body>
-    <!-- Custom cursor -->
-    <div class="cursor runner"></div>
-    <div class="cursor chaser"></div>
-
     <header class="header">
-      <!-- <div class="logo-container">
-        <i>💫</i>
-      </div> -->
+      <div id="top-nav" class="top-nav">
+        <div class="logo-container">
+          <img class="logo" src="logo.png" alt="" />
+          <p class="logo-name">cocoenz</p>
+        </div>
 
-      <!-- navbar -->
-
-      <div class="header-top">
-        <a href="#" class="header-top__logo">
-          <img class="header-top__logo-black" src="" />
-        </a>
-        <div class="menu">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a href="#">Home</a>
+        <input
+          type="checkbox"
+          id="main-navigation-toggle"
+          class="btn btn--close"
+          title="Toggle main navigation"
+        />
+        <label for="main-navigation-toggle">
+          <span></span>
+        </label>
+        <nav id="main-navigation" class="nav-main">
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link shuffle" href="#">HOME</a>
             </li>
-            <li class="menu-item">
-              <a href="#about">About</a>
+            <li class="menu__item">
+              <a class="menu__link shuffle" href="#about">ABOUT</a>
             </li>
-            <li class="menu-item">
-              <a href="#events">Events</a>
+            <li class="menu__item">
+              <a class="menu__link shuffle" href="#events">EVENTS</a>
             </li>
-            <li class="menu-item">
-              <a href="#schedule">Schedule</a>
+            <li class="menu__item">
+              <a class="menu__link shuffle" href="#schedule">SCHEDULE</a>
             </li>
-            <li class="menu-item">
-              <a href="#team">Team</a>
-            </li>
-
-            <li class="menu-item menu-item-register">
-              <a href="#events">Register</a>
+            <li class="menu__item">
+              <a class="menu__link shuffle" href="#team">TEAM</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
-
+    </header>
+    <main class="main">
+      <!-- The video -->
       <video
         poster="https://cdn-l-cyberpunk.cdprojektred.com/video/EP1_ProjectAce_clean_16x9_15s.jpg"
         autoplay="autoplay"
@@ -125,15 +133,50 @@
         playsinline="playsinline"
       >
         <!-- <source src="bg-video.mp4" type="video/mp4; codecs=av01.0.05M.08" /> -->
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-purple-cyberpunk-space-with-digital-worlds-17995-large.mp4" type="video/mp4; codecs=av01.0.05M.08" />
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-purple-cyberpunk-space-with-digital-worlds-17995-large.mp4"
+          type="video/mp4; codecs=av01.0.05M.08"
+        />
       </video>
 
-      <div class="header__more">
-        <h1 class="title">COCOENZ'23</h1>
-        <p class="hero-quote">where ideas meets in innovation</p>
-      </div>
+      <!-- Optional: some overlay text to describe the video -->
+      <div class="main-content">
+        <div class="hero-content">
+          <div class="title-container">
+            <h1 data-text="cocoenz'">cocoenz'</h1>
+            <h1 data-text="23" class="title-year">23</h1>
+          </div>
+          <p class="hero-quote">where ideas meet innovation</p>
+          <!-- Use a button to pause/play the video with JavaScript -->
+          <a class="register-btn" href="#events">Register</a>
+        </div>
 
-    </header>
+        <div class="countdown" id="countdown">
+          <p class="timer-heading">Get Ready soon!!!</p>
+          <div class="countdown-content">
+            <div class="countdown-content-item">
+              <h2 id="days">00</h2>
+              <p>days</p>
+            </div>
+
+            <div class="countdown-content-item">
+              <h2 id="hours">00</h2>
+              <p>hours</p>
+            </div>
+
+            <div class="countdown-content-item">
+              <h2 id="minutes">00</h2>
+              <p>minutes</p>
+            </div>
+
+            <div class="countdown-content-item">
+              <h2 id="seconds">00</h2>
+              <p>seconds</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <!-- About section -->
     <section id="about" class="about">
       <!-- Particles container + canvas -->
@@ -163,19 +206,16 @@
         <div class="card">
           <div class="card-content">
             <div id="sympo-img" class="card-img">
-              <img data-aos="fade-left" src="department-logo.png" alt="" />
+              <img data-aos="fade-left" src="logo.png" alt="" />
             </div>
             <div id="sympo-text" class="card-text">
               <h3>About COCOENZ</h3>
               <p data-aos="fade-right">
-                Our department provides a platform to delve deep into the
-                intricacies of cutting-edge fields such as Artificial
-                Intelligence, Machine Learning, Cloud Computing, Computer
-                Networks, Embedded Systems, Internet of Things, and fundamental
-                and advanced communication engineering. We are committed to
-                empowering our students with the knowledge and expertise they
-                need to drive innovation and contribute to the ever-evolving
-                world of technology.
+                Get ready for an immersive experience at COCOENZ '23, a
+                cyberpunk extravaganza where tech meets fun. Our technical
+                lineup includes 'The Binary Bash,' 'Narrato,' 'Be the CEO,'
+                'Circuit Rix,' 'Fun Music Turbo,' and 'Nostalgia,' offering a
+                dynamic fusion of cutting-edge technology and entertainment.
               </p>
             </div>
           </div>
@@ -200,6 +240,7 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/binary-char.png" class="character" />
           </div>
+          <p class="event-info">Coding Event</p>
         </div>
 
         <!-- circuit design -->
@@ -211,6 +252,7 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/binary-char.png" class="character" />
           </div>
+          <p class="event-info">Circuit Design</p>
         </div>
 
         <!-- presentation -->
@@ -222,6 +264,7 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/narroto-char.png" class="character" />
           </div>
+          <p class="event-info">Paper Presentation</p>
         </div>
 
         <!-- product pitch -->
@@ -233,7 +276,7 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/ceo-char.png" class="character" />
           </div>
-         
+          <p class="event-info">Product Pitch</p>
         </div>
 
         <!-- music -->
@@ -245,6 +288,7 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/music-char.png" class="character" />
           </div>
+          <p class="event-info">Mystery Games</p>
         </div>
 
         <!-- nostalgia -->
@@ -256,153 +300,153 @@
             <img src="images/narroto-title.jpg" class="title" />
             <img src="images/nostalgia-char.png" class="character" />
           </div>
+          <p class="event-info">Anime Quiz</p>
         </div>
       </div>
     </section>
 
-      <!-- Schedule section -->
-      <section class="schedule" id="schedule">
-        <!-- add particles -->
-        <h3 class="schedule-heading">Schedule</h3>
-        <div class="timeline-outer-container">
-    <div class="timeline">
-      <!-- 1 -->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash - code the future.</p>
-
-        </div>
-      </div>
-      <!--        2        -->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <!--            icon here -->
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash- code the future.</< /p>
-
-        </div>
-      </div>
-      <!--  3-->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash- code the future.</< /p>
-
-        </div>
-      </div>
-      <!--    4    -->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash- code the future.</< /p>
-
-        </div>
-      </div>
-      <!--       5 -->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash- code the future.</< /p>
-
-        </div>
-      </div>
-      <!--       6 -->
-      <div class="timeline-container">
-        <div data-aos="zoom-in" class="timeline-icon">
-          <i class="far fa-grin-wink"></i>
-        </div>
-        <div data-aos="fade-left" class="timeline-body">
-          <h4 class="timeline-title"><span class="badge">10.00 - 10.30 am</span></h4>
-          <p>binary bash- code the future.</< /p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-      </section>
-
-      <!-- Sponsors & Team section -->
-      <section class="team-sponsors">
-        <!-- Sponsors -->
-        <div class="sponsors">
-
-          <h3>Sponsors</h3>
-          <div class="grid">
-
-            <div data-aos="zoom-in-up" class="sponsor">😀</div>
-            <div data-aos="zoom-in-up" class="sponsor">😀</div>
-            <div data-aos="zoom-in-up" class="sponsor">😀</div>
-            <div data-aos="zoom-in-up" class="sponsor">😀</div>
+    <!-- Schedule section -->
+    <section class="schedule" id="schedule">
+      <!-- add particles -->
+      <h3 class="schedule-heading">Schedule</h3>
+      <div class="timeline-outer-container">
+        <div class="timeline">
+          <!-- 1 -->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">10.30 am - 12.00 pm</span>
+              </h4>
+              <p>Binary Bash</p>
+            </div>
+          </div>
+          <!--        2        -->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <!-- icon here -->
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">10.30 am - 12.00 pm</span>
+              </h4>
+              <p>Circuit Rix</p>
+            </div>
+          </div>
+          <!--  3-->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">10.30 am - 12.00 pm</span>
+              </h4>
+              <p>Be the CEO</p>
+            </div>
+          </div>
+          <!--    4    -->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">10.30 am - 12.00 pm</span>
+              </h4>
+              <p>Narrato</p>
+            </div>
+          </div>
+          <!--       5 -->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">11.00 am - 2.30 pm</span>
+              </h4>
+              <p>FM Turbo</p>
+            </div>
+          </div>
+          <!--       6 -->
+          <div class="timeline-container">
+            <div data-aos="zoom-in" class="timeline-icon">
+              <i class="far fa-grin-wink"></i>
+            </div>
+            <div data-aos="fade-left" class="timeline-body">
+              <h4 class="timeline-title">
+                <span class="badge">1.00 pm - 2.30 pm</span>
+              </h4>
+              <p>Nostalgia Returns</p>
+            </div>
           </div>
         </div>
-
-        <div class="team">
-          <h3>Our Team</h3>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <p class="member-name">Tom</p>
-            <p class="member-role">Cat</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-            <p class="member-name">Tom</p>
-            <p class="member-role">Cat</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-            <p class="member-name">Tom</p>
-            <p class="member-role">Cat</p>
-          </div>
-
-          <div class="swiper-slide">
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-            <p class="member-name">Tom</p>
-            <p class="member-role">Cat</p>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
       </div>
-    </div>
-      </section>
+    </section>
 
-      <!-- Footer Section -->
-      <footer class="footer grid">
-        <div class="contacts">
-          <h4>Contacts</h4>
-          <ul>
-            
-          </ul>
+    <!-- Sponsors & Team section -->
+    <section class="team-sponsors">
+      <!-- Sponsors -->
+      <div class="sponsors">
+        <h3>Sponsors</h3>
+        <div class="grid">
+          <div data-aos="zoom-in-up" class="sponsor">😀</div>
+          <div data-aos="zoom-in-up" class="sponsor">😀</div>
+          <div data-aos="zoom-in-up" class="sponsor">😀</div>
+          <div data-aos="zoom-in-up" class="sponsor">😀</div>
         </div>
-        <div class="address">
-          <h4>Address</h4>
-        </div>
-        <div class="socials">
+      </div>
 
-        </div>
-      </footer>
+      <div class="team">
+        <h3>Our Team</h3>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              <p class="member-name">Tom</p>
+              <p class="member-role">Cat</p>
+            </div>
 
-      
-      <!-- Swiper CDN -->
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              <p class="member-name">Tom</p>
+              <p class="member-role">Cat</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              <p class="member-name">Tom</p>
+              <p class="member-role">Cat</p>
+            </div>
+
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              <p class="member-name">Tom</p>
+              <p class="member-role">Cat</p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer grid">
+      <div class="contacts">
+        <h4>Contacts</h4>
+        <ul></ul>
+      </div>
+      <div class="address">
+        <h4>Address</h4>
+      </div>
+      <div class="socials"></div>
+    </footer>
+
+    <!-- Swiper CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- Effects script -->
     <script src="effects.js"></script>
