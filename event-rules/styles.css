@@ -153,6 +153,11 @@ body .cybr-btn + .cybr-btn {
   margin-top: 2rem;
 }
 
+.cybr-btn a {
+  display: block;
+  height: 100%;
+}
+
 .cybr-btn {
   margin-bottom: 2rem;
   z-index: 1;

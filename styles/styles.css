@@ -229,7 +229,7 @@ h3 {
 
 /* Swiper - photo slides */
 .team {
-  padding-inline: 3rem;
+  padding-inline: 1.5rem;
 }
 
 .member-name {
@@ -326,8 +326,8 @@ h3 {
 }
 
 .map {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border: none;
   border: 5px solid var(--secondary-color);
   /* outline: 5px solid var(--black-color); */
@@ -366,6 +366,9 @@ h3 {
   .map {
     width: 300px;
     height: 300px;
+  }
+  .team {
+    padding-inline: 3rem;
   }
 }
 
