@@ -273,7 +273,31 @@ var swiper = new Swiper(".mySwiper", {
     disableOnInteraction: false, // Set this to true if you want autoplay to stop when the user interacts with the slider (e.g., clicks or swipes)
   },
   loop: true, // Add this line to enable the loop feature
+  // Disable autoplay initially
+  autoplayDisableOnInteraction: true,
 });
+
+// to only start to slide after user is in team section
+// Function to start the Swiper autoplay when the team section is in the viewport
+function startSwiperAutoplay(entries) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      swiper.autoplay.start();
+    } else {
+      swiper.autoplay.stop();
+    }
+  });
+}
+
+// Create an Intersection Observer to watch the team section
+const teamSection = document.querySelector(".team-section");
+const observer = new IntersectionObserver(startSwiperAutoplay, {
+  root: null, // Use the viewport as the root
+  threshold: 0.5, // When 50% of the section is visible
+});
+
+// Observe the team section
+observer.observe(teamSection);
 
 // Shuffle effect
 document.addEventListener("DOMContentLoaded", function () {
