@@ -155,6 +155,10 @@
   transform: translate3d(0%, -30%, 100px);
 }
 
+/* -------- for mobile -------- */
+/* .slide.mobile-tap .event-card {
+} */
+
 .body {
   overflow-x: hidden;
 }
