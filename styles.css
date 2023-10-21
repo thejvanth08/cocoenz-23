@@ -38,23 +38,6 @@
   /* gap: 10px; */
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.btn {
-  background-color: var(--primary-color);
-  color: var(--white-color);
-  padding: 12px 26px;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
 /* General styles */
 html {
   scroll-behavior: smooth;
@@ -238,15 +221,121 @@ h3 {
   max-width: 400px;
 }
 
+/* Swiper - photo slides */
+.team {
+  padding-inline: 3rem;
+}
+
+.member-name {
+  padding-block: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00f0ff;
+}
+
+.member-role {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  /* padding-top: 50px; */
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: auto;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide p {
+  text-align: center;
+}
+
 /* Footer styles */
+
+.flex {
+  display: flex;
+}
 .footer {
-  min-height: 500px;
+  height: auto;
   background-color: var(--primary-color);
   padding: 2rem 3rem;
 }
 
+.contact.flex {
+  flex-direction: column;
+}
+
+.mail.flex,
+.contact-name.flex {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
 .footer * {
   color: var(--black-color);
+}
+
+.footer h4 {
+  padding-bottom: 1.2rem;
+}
+
+.footer i {
+  font-size: 1.3rem;
+  color: var(--secondary-color);
+  background-color: var(--black-color);
+  padding: 0.3rem;
+  border-radius: 20%;
+}
+
+.footer > div {
+  grid-column: 2/8;
+  margin-bottom: 1rem;
+}
+.footer > div.contacts {
+  grid-column: 3/7;
+}
+
+.contacts > div {
+  margin-bottom: 1rem;
+}
+
+.contact-name {
+  padding-bottom: 0.3rem;
+}
+
+.address-details {
+  text-align: center;
+}
+
+.map {
+  width: 300px;
+  height: 300px;
+  border: none;
+  border: 5px solid var(--secondary-color);
+  /* outline: 5px solid var(--black-color); */
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.social-icons.flex {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -262,12 +351,9 @@ h3 {
     padding: 0 2rem;
   }
 
-  /* .sponsor:nth-child(odd) {
-    grid-column: 2/5;
+  .footer > div.contacts {
+    grid-column: 4/6;
   }
-  .sponsor:nth-child(even) {
-    grid-column: 5/8;
-  } */
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -306,10 +392,36 @@ h3 {
   #sympo-text p {
     padding-left: 2rem;
   }
+
+  .footer > div.contacts {
+    grid-column: 1/3;
+  }
+  .footer > div.address {
+    grid-column: 3/7;
+  }
+  .footer > div.socials {
+    grid-column: 7/9;
+  }
+
+  .footer {
+    padding: 3rem 4rem;
+  }
+
+  .footer i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  .map {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .footer {
+    padding-inline: 10%;
+  }
 }
 
 /* to hide navbar - when user is in events section */

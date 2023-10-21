@@ -44,45 +44,6 @@
     <link rel="stylesheet" href="hero.css" />
     <!-- Schedule CSS -->
     <link rel="stylesheet" href="schedule.css" />
-    <style>
-      .team {
-        padding-inline: 3rem;
-      }
-
-      .member-name {
-        padding-block: 1rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #00f0ff;
-      }
-
-      .member-role {
-        font-size: 1.1rem;
-        font-weight: 400;
-      }
-
-      .swiper {
-        width: 100%;
-        max-width: 1000px;
-        /* padding-top: 50px; */
-      }
-
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: auto;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-      }
-
-      .swiper-slide p {
-        text-align: center;
-      }
-    </style>
   </head>
 
   <body>
@@ -152,7 +113,7 @@
         </div>
 
         <div class="countdown" id="countdown">
-          <p class="timer-heading">Get Ready soon!!!</p>
+          <p class="timer-heading">Get Ready soon !</p>
           <div class="countdown-content">
             <div class="countdown-content-item">
               <h2 id="days">00</h2>
@@ -161,17 +122,17 @@
 
             <div class="countdown-content-item">
               <h2 id="hours">00</h2>
-              <p>hours</p>
+              <p>hrs</p>
             </div>
 
             <div class="countdown-content-item">
               <h2 id="minutes">00</h2>
-              <p>minutes</p>
+              <p>mins</p>
             </div>
 
             <div class="countdown-content-item">
               <h2 id="seconds">00</h2>
-              <p>seconds</p>
+              <p>secs</p>
             </div>
           </div>
         </div>
@@ -235,7 +196,7 @@
             <div class="event-wrapper">
               <img src="images/events/binary-cover.png" class="cover-image" />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/binary-title.png" class="title" />
             <img src="images/events/binary-char.png" class="character" />
           </div>
           <p class="event-info">Coding Event</p>
@@ -462,15 +423,54 @@
       <div class="contacts">
         <h4>CONTACT</h4>
 
-        <div class="heading"></div>
+        <div class="mail flex">
+          <i class="fa-solid fa-envelope"></i>
+          <p><a href="mailto:cocoenz@gmail.com">cocoenz@gmail.com</a></p>
+        </div>
+
+        <div class="contact flex">
+          <div class="contact-name flex">
+            <i class="fa-solid fa-phone"></i>
+            <p>G Sakthi</p>
+          </div>
+          <p><a href="tel:+917305559849">73055 59849</a></p>
+        </div>
+
+        <div class="contact flex">
+          <div class="contact-name flex">
+            <i class="fa-solid fa-phone"></i>
+            <p>K Akshaya</p>
+          </div>
+          <p><a href="tel:+917305416042">73054 16042</a></p>
+        </div>
       </div>
 
       <div class="address">
         <h4>ADDRESS</h4>
+        <div class="map-container">
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.175064770658!2d80.05065757499261!3d12.960647087353703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52f51f638ddfbb%3A0xf3aef7ec7c8979ba!2sSri%20Sairam%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1697823040989!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="address-details">
+          <p>
+            <span class="bold">Sri Sai Ram Institute of Technology </span><br />
+            Sai Leo Nagar, West Tambaram, <br />
+            Chennai - 600044
+          </p>
+        </div>
       </div>
 
       <div class="socials">
-        <h4>SOCIAL</h4>
+        <h4>SOCIALS</h4>
+        <div class="social-icons flex">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-meta"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
       </div>
     </footer>
 

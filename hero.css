@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&family=PT+Mono&display=swap");
 
 @font-face {
-  src: url("./font/Cyberpunks.ttf");
+  src: url("./font/valorant.ttf");
   font-family: cyber-font;
 }
 
@@ -188,29 +188,7 @@ a {
   font-family: var(--font-family-secondary);
   font-size: 3.5rem;
 }
-.submenu {
-  left: 0;
-  opacity: 0;
-  position: absolute;
-  transform: translateY(-10%);
-  top: 100%;
-  width: 100%;
-  visibility: hidden;
-  z-index: 2;
-}
-.submenu .menu__item {
-  font-family: var(--font-family-primary);
-  font-size: 3.5vmin;
-  width: 100%;
-}
-.submenu .menu__link {
-  color: var(--color-secondary);
-  text-shadow: 1px 1px 0 var(--color-primary), 2px 2px 0 var(--color-primary);
-}
-.submenu .menu__link::before,
-.submenu .menu__link::after {
-  display: none;
-}
+
 .menu__item {
   display: block;
   position: relative;
@@ -275,9 +253,7 @@ a {
   transition-duration: calc(var(--td) * 3);
   transform: translate(0, calc(var(--pull) * -1));
 }
-.menu__item .submenu .menu__link {
-  opacity: 1;
-}
+
 .menu__item:hover > .menu__link {
   color: var(--color-secondary);
   opacity: 1;
@@ -367,6 +343,7 @@ a {
   color: white;
   background-color: #000000a7;
   padding-block: 1rem;
+  border-radius: 1rem;
 }
 
 .countdown p {
@@ -434,8 +411,16 @@ a {
     margin-top: 9rem;
   }
 
+  .logo-name {
+    font-family: cyber-font;
+    font-size: 1.7rem;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px var(--color-secondary);
+  }
+
   .title-container h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     letter-spacing: 3px;
   }
 
