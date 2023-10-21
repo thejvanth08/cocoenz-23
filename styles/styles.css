@@ -9,7 +9,7 @@
   outline: none;
 
   /* for custom cursor */
-  cursor: url("./images/cursor.png"), auto;
+  cursor: url("../images/cursor.png"), auto;
 }
 
 /* CSS variables */
@@ -308,6 +308,7 @@ h3 {
   grid-column: 2/8;
   margin-bottom: 1rem;
 }
+
 .footer > div.contacts {
   grid-column: 3/7;
 }
@@ -325,8 +326,8 @@ h3 {
 }
 
 .map {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border: none;
   border: 5px solid var(--secondary-color);
   /* outline: 5px solid var(--black-color); */
@@ -355,13 +356,17 @@ h3 {
   font-size: 20px;
 }
 
-.copyrights .coco {
+.copyrights .developer a {
   font-weight: 600;
   color: var(--secondary-color);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .map {
+    width: 300px;
+    height: 300px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
