@@ -1,3 +1,6 @@
+// msg to user
+console.log("USE IN DESKTOP FOR BETTER EXPERIENCE");
+
 document.addEventListener("DOMContentLoaded", function () {
   // Get a reference to the .menu element
   const menu = document.querySelector(".top-nav");
@@ -300,58 +303,58 @@ const observer = new IntersectionObserver(startSwiperAutoplay, {
 observer.observe(teamSection);
 
 // Shuffle effect
-document.addEventListener("DOMContentLoaded", function () {
-  // Set effect velocity in ms
-  // high means slow
-  var velocity = 80;
+// document.addEventListener("DOMContentLoaded", function () {
+//   // Set effect velocity in ms
+//   // high means slow
+//   var velocity = 80;
 
-  var shuffleElements = document.querySelectorAll(".shuffle");
+//   var shuffleElements = document.querySelectorAll(".shuffle");
 
-  shuffleElements.forEach(function (element) {
-    element.dataset.text = element.textContent;
-  });
+//   shuffleElements.forEach(function (element) {
+//     element.dataset.text = element.textContent;
+//   });
 
-  var shuffle = function (o) {
-    for (
-      var j, x, i = o.length;
-      i;
-      j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x
-    );
-    return o;
-  };
+//   var shuffle = function (o) {
+//     for (
+//       var j, x, i = o.length;
+//       i;
+//       j = parseInt(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x
+//     );
+//     return o;
+//   };
 
-  var shuffleText = function (element, originalText) {
-    var elementTextArray = [];
-    var randomText = [];
+//   var shuffleText = function (element, originalText) {
+//     var elementTextArray = [];
+//     var randomText = [];
 
-    for (var i = 0; i < originalText.length; i++) {
-      elementTextArray.push(originalText.charAt(i));
-    }
+//     for (var i = 0; i < originalText.length; i++) {
+//       elementTextArray.push(originalText.charAt(i));
+//     }
 
-    var repeatShuffle = function (times, index) {
-      if (index == times) {
-        element.textContent = originalText;
-        return;
-      }
+//     var repeatShuffle = function (times, index) {
+//       if (index == times) {
+//         element.textContent = originalText;
+//         return;
+//       }
 
-      setTimeout(function () {
-        randomText = shuffle(elementTextArray);
-        for (var i = 0; i < index; i++) {
-          randomText[i] = originalText[i];
-        }
-        randomText = randomText.join("");
-        element.textContent = randomText;
-        index++;
-        repeatShuffle(times, index);
-      }, velocity);
-    };
+//       setTimeout(function () {
+//         randomText = shuffle(elementTextArray);
+//         for (var i = 0; i < index; i++) {
+//           randomText[i] = originalText[i];
+//         }
+//         randomText = randomText.join("");
+//         element.textContent = randomText;
+//         index++;
+//         repeatShuffle(times, index);
+//       }, velocity);
+//     };
 
-    repeatShuffle(element.textContent.length, 0);
-  };
+//     repeatShuffle(element.textContent.length, 0);
+//   };
 
-  shuffleElements.forEach(function (element) {
-    element.addEventListener("mouseenter", function () {
-      shuffleText(this, this.dataset.text);
-    });
-  });
-});
+//   shuffleElements.forEach(function (element) {
+//     element.addEventListener("mouseenter", function () {
+//       shuffleText(this, this.dataset.text);
+//     });
+//   });
+// });

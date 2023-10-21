@@ -289,7 +289,7 @@ a {
   font-size: 1.7rem;
   color: white;
   letter-spacing: 1.8px;
-  text-shadow: 2px 2px 3px var(--color-secondary);
+  text-shadow: 2px 2px 8px var(--color-secondary);
   position: relative;
   right: 7px;
 }
