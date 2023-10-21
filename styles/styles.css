@@ -211,7 +211,9 @@ h3 {
 .sponsor {
   grid-column: 3/7;
   /* margin-block: 1rem; */
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 5rem;
   margin: 0 auto 3rem;
   padding: 20px;
@@ -220,6 +222,12 @@ h3 {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(9.1px);
   -webkit-backdrop-filter: blur(9.1px);
+  transition: box-shadow 0.7s;
+}
+
+.sponsor:hover {
+  box-shadow: 2px 2px 8px var(--primary-color),
+    -2px -2px 8px var(--primary-color);
 }
 
 .sponsor img {
