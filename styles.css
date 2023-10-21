@@ -7,6 +7,9 @@
   margin: 0;
   text-decoration: none;
   outline: none;
+
+  /* for custom cursor */
+  cursor: url("./images/cursor.png"), auto;
 }
 
 /* CSS variables */
@@ -51,6 +54,10 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 h1,
 h2,
 h3,
@@ -76,13 +83,8 @@ h3 {
 /* For particles canvas */
 .particles-js-canvas-el {
   max-width: 100vw;
-  height: auto;
+  height: 100%;
   position: absolute;
-  /* don't set higher than 100 -> else it makes the fixed navbar & scrollup unclickable  */
-  /* z-index: 0; */
-  /* this makes canvas to not to respond with cursor -> can't interact with particles elements
-  this makes users to interact with other elements */
-  /* pointer-events: none; */
 }
 
 .cards:hover > .card::after {
@@ -208,12 +210,16 @@ h3 {
 
 .sponsor {
   grid-column: 3/7;
-  background-color: rgba(255, 255, 255, 0.108);
   /* margin-block: 1rem; */
   text-align: center;
   font-size: 5rem;
   margin: 0 auto 3rem;
   padding: 20px;
+  background: rgba(86, 85, 85, 0.296);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
 .sponsor img {
@@ -338,6 +344,22 @@ h3 {
   gap: 20px;
 }
 
+.copyrights {
+  width: 100%;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright-symbol {
+  font-size: 20px;
+}
+
+.copyrights .coco {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 }
@@ -407,10 +429,6 @@ h3 {
     padding: 3rem 4rem;
   }
 
-  .footer i {
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
   .map {
     width: 350px;
     height: 350px;

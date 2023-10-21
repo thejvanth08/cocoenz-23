@@ -39,7 +39,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="styles.css" />
     <!-- Cards CSS -->
-    <link rel="stylesheet" href="cards.css" />
+    <link rel="stylesheet" href="events.css" />
     <!-- Hero CSS -->
     <link rel="stylesheet" href="hero.css" />
     <!-- Schedule CSS -->
@@ -47,10 +47,11 @@
   </head>
 
   <body>
+
     <header class="header">
       <div id="top-nav" class="top-nav">
         <div class="logo-container">
-          <img class="logo" src="logo.png" alt="" />
+          <img class="logo" src="images/logo/logo.png" alt="" />
           <p class="logo-name">cocoenz</p>
         </div>
 
@@ -87,7 +88,7 @@
     <main class="main">
       <!-- The video -->
       <video
-        poster="https://cdn-l-cyberpunk.cdprojektred.com/video/EP1_ProjectAce_clean_16x9_15s.jpg"
+        poster="images/hero/fallback-img.jpg"
         autoplay="autoplay"
         loop="loop"
         muted="muted"
@@ -108,12 +109,17 @@
             <h1 data-text="23" class="title-year">23</h1>
           </div>
           <p class="hero-quote">where ideas meet innovation</p>
-          <!-- Use a button to pause/play the video with JavaScript -->
-          <a class="register-btn" href="#events">Register</a>
+          
+          <div class="btn-container">
+            <button type="button" class="button">
+              <div class="button__label"><a class="shuffle" href="#events">Register</a></div>
+              
+            </button>
+          </div>
         </div>
 
         <div class="countdown" id="countdown">
-          <p class="timer-heading">Get Ready soon !</p>
+          <p class="timer-heading">Gear up, all hands on deck!</p>
           <div class="countdown-content">
             <div class="countdown-content-item">
               <h2 id="days">00</h2>
@@ -147,10 +153,14 @@
         <div class="card">
           <div class="card-content">
             <div class="card-img">
-              <img data-aos="fade-right" src="department-logo.png" alt="" />
+              <img
+                data-aos="fade-right"
+                src="images/logo/department-logo.png"
+                alt=""
+              />
             </div>
             <div class="card-text">
-              <h3>Computer and Communication Engineering</h3>
+              <h3>COMPUTER AND COMMUNICATION ENGINEERING</h3>
               <p data-aos="fade-left">
                 Our department offers a platform for exploring cutting-edge
                 areas like Artificial Intelligence, Machine Learning, Cloud
@@ -165,16 +175,19 @@
         <div class="card">
           <div class="card-content">
             <div id="sympo-img" class="card-img">
-              <img data-aos="fade-left" src="logo.png" alt="" />
+              <img data-aos="fade-left" src="images/logo/logo.png" alt="" />
             </div>
             <div id="sympo-text" class="card-text">
-              <h3>About COCOENZ</h3>
+              <h3>ABOUT COCOENZ</h3>
               <p data-aos="fade-right">
-                Get ready for an immersive experience at COCOENZ'23, a cyberpunk
-                extravaganza where tech meets fun. Our technical lineup includes
-                'The Binary Bash,' 'Narrato,' 'Be the CEO,' 'Circuit Rix,' 'Fun
-                Music Turbo,' and 'Nostalgia,' offering a dynamic fusion of
-                cutting-edge technology and entertainment.
+                COCOENZ’23, organized by the Department of Computer and
+                Communication Engineering at Sri Sairam Institute of Technology
+                on November 1, 2023, is a national-level techfest celebrating
+                imagination and innovation. The event features 4 technical
+                competitions, such as Narrato (Paper Presentation) and Circuit
+                Rix (circuit design), as well as 2 non-technical events,
+                including FM Turbo and Nostalgia Returns, with engaging
+                challenges.
               </p>
             </div>
           </div>
@@ -187,7 +200,7 @@
       <!-- horizontal scroll starts -->
       <div class="horizontal-sliders">
         <div class="event-heading-container">
-          <h3 class="heading">Events</h3>
+          <h3 class="heading">EVENTS</h3>
         </div>
 
         <!-- coding -->
@@ -208,7 +221,7 @@
             <div class="event-wrapper">
               <img src="images/events/circuit-cover.png" class="cover-image" />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/circuit-title.png" class="title" />
             <img src="images/events/circuit-char.png" class="character" />
           </div>
           <p class="event-info">Circuit Design</p>
@@ -220,7 +233,7 @@
             <div class="event-wrapper">
               <img src="images/events/narrato-cover.png" class="cover-image" />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/narrato-title.png" class="title" />
             <img src="images/events/narrato-char.png" class="character" />
           </div>
           <p class="event-info">Paper Presentation</p>
@@ -232,7 +245,7 @@
             <div class="event-wrapper">
               <img src="images/events/ceo-cover.png" class="cover-image" />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/ceo-title.png" class="title" />
             <img src="images/events/ceo-char.png" class="character" />
           </div>
           <p class="event-info">Product Pitch</p>
@@ -244,7 +257,7 @@
             <div class="event-wrapper">
               <img src="images/events/music-cover.png" class="cover-image" />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/music-title.png" class="title" />
             <img src="images/events/music-char.png" class="character" />
           </div>
           <p class="event-info">Mystery Games</p>
@@ -254,9 +267,12 @@
         <div class="slide">
           <div class="event-card">
             <div class="event-wrapper">
-              <img src="images/nostalgia-cover.png" class="cover-image" />
+              <img
+                src="images/events/nostalgia-cover.png"
+                class="cover-image"
+              />
             </div>
-            <img src="images/narroto-title.jpg" class="title" />
+            <img src="images/events/nostalgia-title.png" class="title" />
             <img src="images/nostalgia-char.png" class="character" />
           </div>
           <p class="event-info">Anime Quiz</p>
@@ -267,7 +283,7 @@
     <!-- Schedule section -->
     <section class="schedule" id="schedule">
       <!-- add particles -->
-      <h3 class="schedule-heading">Schedule</h3>
+      <h3 class="schedule-heading">SCHEDULE</h3>
       <div class="timeline-outer-container">
         <div class="timeline">
           <!-- 1 -->
@@ -349,12 +365,13 @@
 
     <!-- Sponsors & Team section -->
     <section class="team-sponsors">
+      <div id="particles-two-js"></div>
       <!-- Sponsors -->
       <div class="sponsors">
-        <h3>Sponsors</h3>
+        <h3>SPONSORS</h3>
         <div class="grid">
           <div data-aos="zoom-in-up" class="sponsor">
-            <img src="images/sponsor/edge-sponsor.png" alt="" />
+            <a href="https://edgematrixcorp.com/"><img src="images/sponsor/edge-sponsor.png" alt="" /></a>
           </div>
           <!-- <div data-aos="zoom-in-up" class="sponsor">😀</div>
           <div data-aos="zoom-in-up" class="sponsor">😀</div>
@@ -363,7 +380,7 @@
       </div>
 
       <div class="team">
-        <h3>Our Team</h3>
+        <h3>OUR TEAM</h3>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -425,7 +442,7 @@
 
         <div class="mail flex">
           <i class="fa-solid fa-envelope"></i>
-          <p><a href="mailto:cocoenz@gmail.com">cocoenz@gmail.com</a></p>
+          <p><a  class="shuffle" href="mailto:cocoenz@gmail.com">cocoenz@gmail.com</a></p>
         </div>
 
         <div class="contact flex">
@@ -433,15 +450,15 @@
             <i class="fa-solid fa-phone"></i>
             <p>G Sakthi</p>
           </div>
-          <p><a href="tel:+917305559849">73055 59849</a></p>
+          <p><a class="shuffle" href="tel:+917305559849">73055 59849</a></p>
         </div>
 
         <div class="contact flex">
           <div class="contact-name flex">
             <i class="fa-solid fa-phone"></i>
-            <p>K Akshaya</p>
+            <p>Akshaya Kamalavasan</p>
           </div>
-          <p><a href="tel:+917305416042">73054 16042</a></p>
+          <p><a class="shuffle" href="tel:+917305416042">73054 16042</a></p>
         </div>
       </div>
 
@@ -473,6 +490,9 @@
         </div>
       </div>
     </footer>
+    <div class="copyrights flex">
+      <p>copyright <span class="copyright-symbol">&#169</span><span class="coco"> COCOENZ</span> 2023</p>
+    </div>
 
     <!-- Swiper CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>

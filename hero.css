@@ -289,6 +289,9 @@ a {
   font-size: 1.7rem;
   color: white;
   letter-spacing: 1.8px;
+  text-shadow: 2px 2px 3px var(--color-secondary);
+  position: relative;
+  right: 7px;
 }
 
 .top-nav {
@@ -303,7 +306,11 @@ a {
 
 /* to add bg when scrolled to some range */
 .bg-header {
-  background-color: #080808e3;
+  background: rgba(7, 6, 6, 0.478);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
 }
 
 /*  */
@@ -332,7 +339,7 @@ a {
 
 .countdown {
   width: 80%;
-  max-width: 700px;
+  max-width: 500px;
 }
 
 .countdown-content {
@@ -344,6 +351,7 @@ a {
   background-color: #000000a7;
   padding-block: 1rem;
   border-radius: 1rem;
+  font-size: 0.9rem;
 }
 
 .countdown p {
@@ -356,7 +364,7 @@ a {
   font-size: 5rem;
   font-family: cyber-font;
   font-weight: 500;
-  color: yellow;
+  color: var(--color-dark);
   position: relative;
   letter-spacing: 10px;
 }
@@ -380,26 +388,68 @@ a {
 
 .hero-quote {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
 }
 
 .timer-heading {
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
-  color: yellow;
+  color: var(--color-dark);
 }
 
-.register-btn {
-  display: block;
-  background-color: aqua;
-  color: black;
-  margin-inline: auto;
-  margin-top: 2rem;
-  /* width: 50%; */
-  max-width: 200px;
+/* new btn */
+.button a {
+  color: var(--color-primary);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
 
-  padding: 16px 10px;
+.button {
+  background: var(--color-secondary);
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  height: 50px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 10px),
+    calc(100% - 10px) 100%,
+    0 100%
+  );
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0 30px;
+  cursor: pointer;
+  margin: 4rem auto 0;
+}
+.button:focus {
+  outline: none;
+}
+.button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--color-dark);
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover:before,
+.button:focus:before {
+  transform-origin: left center;
+  transform: scaleX(1);
+}
+
+.button__label {
+  position: relative;
 }
 
 @media screen and (max-width: 600px) {
@@ -412,11 +462,8 @@ a {
   }
 
   .logo-name {
-    font-family: cyber-font;
-    font-size: 1.7rem;
-    color: white;
+    font-size: 1.6rem;
     letter-spacing: 1px;
-    text-shadow: 2px 2px 6px var(--color-secondary);
   }
 
   .title-container h1 {
@@ -430,13 +477,17 @@ a {
 
   .hero-quote {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   .menu > .menu__item {
     font-family: var(--font-family-secondary);
     font-size: 2.5rem;
     padding-block: 1rem;
+  }
+
+  .countdown-content {
+    font-size: 0.8rem;
   }
 }
 
