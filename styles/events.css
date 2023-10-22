@@ -57,7 +57,7 @@
 }
 
 .event-card:hover .event-wrapper {
-  transform: perspective(900px) translateY(-5%) rotateX(50deg) translateZ(0);
+  transform: perspective(900px) translateY(-5%) rotateX(55deg) translateZ(0);
   box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -147,7 +147,7 @@
 
 .quiz .character {
   height: 90%;
-  top: 50px;
+  top: 100px;
 }
 
 .event-card:hover .character {
