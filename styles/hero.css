@@ -275,8 +275,8 @@ a {
 }
 
 .logo {
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
 }
 
 .logo-container {
@@ -291,7 +291,7 @@ a {
   letter-spacing: 1.8px;
   text-shadow: 2px 2px 8px var(--color-secondary);
   position: relative;
-  right: 7px;
+  /* right: 4px; */
 }
 
 .top-nav {
@@ -367,6 +367,7 @@ a {
   color: var(--color-dark);
   position: relative;
   letter-spacing: 10px;
+  text-shadow: 2px 2px 5px #00eeff58, -2px -2px 5px #00eeff5b;
 }
 
 .title-container h1.title-year {
