@@ -272,7 +272,7 @@ var swiper = new Swiper(".mySwiper", {
     slideShadows: true,
   },
   autoplay: {
-    delay: 3000, // Set the delay between slides in milliseconds (e.g., 3000ms or 3 seconds)
+    delay: 1500, // Set the delay between slides in milliseconds (e.g., 3000ms or 3 seconds)
     disableOnInteraction: false, // Set this to true if you want autoplay to stop when the user interacts with the slider (e.g., clicks or swipes)
   },
   loop: true, // Add this line to enable the loop feature
