@@ -342,7 +342,8 @@ h3 {
   width: 230px;
   height: 230px;
   border: none;
-  border: 5px solid var(--secondary-color);
+  border: 5px solid var(--black-color);
+  border-radius: 12px;
   /* outline: 5px solid var(--black-color); */
   display: block;
   margin: 0 auto 1rem;
