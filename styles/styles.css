@@ -473,3 +473,15 @@ h3 {
 .menu-hidden {
   display: none;
 }
+
+/* to fix about section text overflow  */
+@media screen and (max-width: 600px) {
+  .card {
+    height: 600px;
+  }
+  .card-content p {
+    font-size: 1rem;
+    line-height: 1.2;
+    text-indent: 2rem;
+  }
+}
