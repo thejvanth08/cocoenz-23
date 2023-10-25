@@ -367,7 +367,7 @@ a {
   color: var(--color-dark);
   position: relative;
   letter-spacing: 10px;
-  text-shadow: 2px 2px 5px #00eeff58, -2px -2px 5px #00eeff5b;
+  text-shadow: 1px 1px 5px #00eeff58, -1px -1px 5px #00eeff5b;
 }
 
 .title-container h1.title-year {
@@ -451,6 +451,12 @@ a {
 
 .button__label {
   position: relative;
+}
+
+/* btn fix */
+.btn-container {
+  position: relative;
+  bottom: 1rem;
 }
 
 @media screen and (max-width: 600px) {
