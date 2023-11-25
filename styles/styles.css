@@ -214,7 +214,7 @@ h3 {
 }
 
 .sponsor {
-  grid-column: 2/8;
+  grid-column: 3/7;
   /* margin-block: 1rem; */
   display: flex;
   justify-content: center;
@@ -231,7 +231,8 @@ h3 {
 }
 
 .sponsor img {
-  max-width: 300px;
+  width: 100%;
+
   height: auto;
   transition: transform 1s;
 }
@@ -396,6 +397,10 @@ h3 {
   }
   .team {
     padding-inline: 3rem;
+  }
+
+  .sponsor {
+    max-width: 500px;
   }
 }
 
