@@ -335,8 +335,12 @@ a {
   margin-top: 7rem;
 }
 
-/* timer */
+/* postponed info */
+.postpone-info {
+  letter-spacing: 1px;
+}
 
+/* timer */
 .countdown {
   width: 80%;
   max-width: 500px;
