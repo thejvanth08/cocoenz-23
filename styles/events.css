@@ -159,10 +159,6 @@
   transform: translate3d(0%, -30%, 100px);
 }
 
-/* -------- for mobile -------- */
-/* .slide.mobile-tap .event-card {
-} */
-
 .body {
   overflow-x: hidden;
 }
@@ -170,8 +166,8 @@
 .horizontal-sliders {
   display: flex;
   flex-wrap: no-wrap;
-  /*  4 sections -> 4 x 100 -> no. of event cards */
-  width: 600%;
+  /*  5 sections/events -> 5 x 100 -> no. of event cards */
+  width: 500%;
   overflow-x: hidden;
 }
 
