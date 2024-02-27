@@ -77,6 +77,10 @@ h3 {
   padding-block: 0 1rem;
 }
 
+.heading {
+  text-align: center;
+}
+
 /* About styles */
 .about {
   /* height: 90vh; */

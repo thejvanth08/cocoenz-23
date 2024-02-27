@@ -408,10 +408,12 @@ a {
   color: var(--color-primary);
   letter-spacing: 1px;
   font-weight: 600;
+  text-decoration: line-through;
 }
 
 .button {
-  background: var(--color-secondary);
+  /* background: var(--color-secondary); */
+  background-color: rgb(200, 196, 196);
   border: 0;
   padding: 0;
   margin: 0;
